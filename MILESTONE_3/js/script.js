@@ -1,29 +1,3 @@
-/*
-// mi collego al container nell'HTML
-const container = document.querySelector('.conteiner')
-// creo la variabile che poi diventerà la classe
-let evenOrOdd;
-let text;
-
-// do le classi a seconda del numero
-for(let i=0; i <= 100; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-        evenOrOdd = 'fizzBuzz';
-        text = 'fizzbuzz'
-    } else if (i % 3 === 0) {
-        evenOrOdd = 'fizz';
-        text = 'fizz'
-    } else if (i % 5 === 0) {
-        evenOrOdd = 'buzz';
-        text = 'buzz'
-    } else {
-        text = i
-    }
-    let box = `<div class="box ${evenOrOdd}">${text}</div>`;
-    container.innerHTML += box;
-} 
-*/
-
 // mi collego al container
 const container = document.getElementById('container');
 
@@ -35,18 +9,18 @@ let text;
 for(let i=0; i <= 100; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
         clas = 'fizzBuzz';
-        text = 'fizzbuzz';
+        text = 'FizzBuzz';
     } else if (i % 3 === 0) {
         clas = 'fizz';
-        text = 'fizz';
+        text = 'Fizz';
     } else if (i % 5 === 0) {
         clas = 'buzz';
-        text = 'buzz';
+        text = 'Buzz';
     } else {
-        clas = ''
-        text = i
+        clas = '';
+        text = i;
     }
     // aggiungo il tag box al container
-    const box = `<div class="box ${clas}"> ${text}</div>`
-    container.innerHTML += box
+    const box = `<div class="box ${clas}"> ${text}</div>`;
+    container.innerHTML += box;
 }
